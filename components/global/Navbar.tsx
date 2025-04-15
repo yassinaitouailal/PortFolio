@@ -10,16 +10,23 @@ function Navbar({ currentPage }) {
           <span className="font-black text-xl flex items-center">
             <img
               className="mr-2 transform hover:rotate-360 hover:scale-75 transition-transform duration-500"
-              src="/static/logos/logo_no_text.svg"
+              src="/static/logos/55.png"
               width="60"
             />
-            {"BraydenTW".split("").map((letter, index) => {
+            {"Studio Dev Digital".split("").map((letter, index) => {
+              if (letter === " ") {
+                return <span key={index} className="inline-block w-[10px]" />; // المسافة بين الكلمات
+              }
               return (
-                <span key={index} className="hover:text-fun-pink hover:-mt-2 transition-all duration-500 hover:duration-100 click:goodbyeLetterAnim">
+                <span
+                  key={index}
+                  className="hover:text-fun-pink hover:-mt-2 transition-all duration-500 hover:duration-100"
+                >
                   {letter}
                 </span>
               );
-            })}
+            })
+            }
           </span>
         </Link>
       </li>

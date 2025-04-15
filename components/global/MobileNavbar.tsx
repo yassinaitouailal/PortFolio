@@ -38,11 +38,27 @@ export default function MobileNavbar() {
       >
         <li className="list-none font-bold text-lg">
           <Link href="/">
+          <span className="font-black text-xl flex items-center">
             <img
               className="mr-3"
-              src="/static/logos/logo_full.svg"
-              width="160"
+              src="/static/logos/55.png"
+              width="60"
             />
+            {"Studio Dev Digital".split("").map((letter, index) => {
+              if (letter === " ") {
+                return <span key={index} className="inline-block w-[10px]" />; // المسافة بين الكلمات
+              }
+              return (
+                <span
+                  key={index}
+                  className="hover:text-fun-pink hover:-mt-2 transition-all duration-500 hover:duration-100"
+                >
+                  {letter}
+                </span>
+              );
+            })
+            }
+            </span>
           </Link>
         </li>
         <button

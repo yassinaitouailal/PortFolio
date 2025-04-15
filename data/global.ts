@@ -35,10 +35,18 @@ export const routes: Route[] = [
     title: "Projects",
     path: "/projects",
   },
+  // {
+  //   title: "Designs",
+  //   path: "/designs",
+  // },
   {
-    title: "Designs",
-    path: "/designs",
+    title: "About",
+    path: "/about",
   },
+  // {
+  //   title: "Contact",
+  //   path: "/contact",
+  // },
 ];
 
 
@@ -62,11 +70,21 @@ export const footer: Footer = {
           link: "/projects",
           leavesWebsite: false,
         },
+        // {
+        //   name: "Designs",
+        //   link: "/designs",
+        //   leavesWebsite: false,
+        // },
         {
-          name: "Designs",
-          link: "/designs",
+          name: "About",
+          link: "/about",
           leavesWebsite: false,
         },
+        // {
+        //   name: "Contact",
+        //   link: "/contact",
+        //   leavesWebsite: false,
+        // },
       ],
     },
     {
@@ -85,15 +103,15 @@ export const footer: Footer = {
           leavesWebsite: true,
         },
         {
-          name: "Dribbble",
+          name: "Instagram",
           link: "https://dribbble.com/braydentw",
-          icon: "/static/icons/dribbble-f.svg",
+          icon: "/static/icons/instagram-white-icon2.png",
           leavesWebsite: true,
         },
         {
-          name: "IndieHackers",
+          name: "WhatsApp",
           link: "https://indiehackers.com/braydentw",
-          icon: "/static/icons/indiehackers-f.svg",
+          icon: "/static/icons/whttt.png",
           leavesWebsite: true,
         },
         {

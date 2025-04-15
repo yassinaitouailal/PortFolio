@@ -1,13 +1,13 @@
 import React from "react";
 import SectionTitle from "../global/SectionTitle";
-import { testimonials } from "@/data/content/home";
+import { Experience } from "@/data/content/home";
 
-function Testimonials() {
+function Experionse() {
   return (
     <div className="flex flex-col text-left max-w-md md:max-w-full w-full m-auto">
-      <SectionTitle title="Why people love my work!" />
+      <SectionTitle title="My Experience " />
       <div className="max-w-5xl m-auto md:max-h-[400px] grid grid-cols-1 gap-10 md:gap-10 md:grid-cols-3 items-start">
-        {testimonials.map((item, index) => {
+        {Experience.map((item, index) => {
           return (
             <div
               key={index}
@@ -21,6 +21,12 @@ function Testimonials() {
                   />
                 </>
               )}
+                            <p>
+              <img
+                   
+                  width="100px" height="100px" style={{ marginLeft:"85px"}}
+                  src={item.icon}
+              /></p>
               <p className="text-base italic relative testimonialQuote">
                 "{item.quote}"
               </p>
@@ -42,4 +48,4 @@ function Testimonials() {
   );
 }
 
-export default Testimonials;
+export default Experionse;

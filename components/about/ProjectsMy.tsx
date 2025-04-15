@@ -5,14 +5,14 @@ import projects from "@/data/content/projects";
 
 import ProjectCard from "../projects/ProjectCard";
 
-function Projects() {
+function ProjectsMy() {
   return (
     <div className="flex flex-col text-left justify-between pt-8 relative">
       <div id="learnmore">
         <SectionTitle title="My Favorite Projects." />
       </div>
       <div className="grid grid-cols-1 gap-12 md:gap-5 md:grid-cols-3 items-start">
-        {projects.slice(0, 6).map((item) => {
+        {projects.slice(0, 3).map((item) => {
           return (
             <ProjectCard key={item.id} project={item} />
           );
@@ -29,4 +29,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default ProjectsMy;
